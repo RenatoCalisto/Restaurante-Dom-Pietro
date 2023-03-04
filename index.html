@@ -23,18 +23,12 @@
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
    
-        
-
-
-
-
-
-    <link rel="shortcut icon" href="img/whatsappG.png" type="image/x-icon">
+        <link rel="shortcut icon" href="img/whatsappG.png" type="image/x-icon">
 
     <title>Restaurante Don Pietro</title>
 </head>
 <body>
-      <nav class="navbar sticky-top justify-content-center navbar-expand-lg bg-primary ">
+      <nav class="navbar sticky-top justify-content-center navbar-expand-lg">
         <div class="row">
             <div class="col">
           <section id="home"><a class="navbar-brand" href="https://wa.me/5513996585743"><img src="img/whatsappG.png"></a></section> 
@@ -46,8 +40,6 @@
                 <h1>RESTAURANTE DON PIETRO</h1>
             </div>    
         </div> 
-        
-
       </nav>
 
       <div class="space-10"></div>
@@ -58,127 +50,145 @@
 
       switch(diasemana) {
         case 0 :
-            diasemana = "<h2>Hoje é domingo! <br> Restaurante Fechado!</h2>";
+            diasemana = "<h2>Hoje é domingo!</h2>";
             break;
         case 1 :
-        diasemana = "<h2>Hoje é segunda! <br> O Prato do Dia é Virado à Paulista!</h2>";
+        diasemana = "<h2>Hoje é segunda!</h2><h3>Confira o prato do dia no nosso cardápio pelo WhatsApp!</h3>" ;
             break;
         case 2 :
-        diasemana = "<h2>Hoje é terça! <br> O Prato do Dia é Costelinha de Porco com Feijão Tropeiro!</h2>";
+        diasemana = "<h2>Hoje é terça!</h2><h3>Confira o prato do dia no nosso cardápio pelo WhatsApp!</h3>";
             break;
         case 3 :
-        diasemana = "<h2>Hoje é quarta! <br> O Prato do Dia é Feijoada!</h2>";
+        diasemana = "<h2>Hoje é quarta!</h2><h3/>Confira o prato do dia no nosso cardápio pelo WhatsApp!</h2>";
             break;
         case 4 :
-        diasemana = "<h2>Hoje é quinta! <br> O Prato do Dia é Panqueca ou Lasanha de Beringela!</h2>";
+        diasemana = "<h2>Hoje é quinta!</h2><h3>Confira o prato do dia no nosso cardápio pelo WhatsApp!</h3>";
             break;
         case 5 :
-        diasemana = "<h2>Hoje é sexta! <br> O Prato do Dia é Costelinha de Porco com feijão tropeiro!</h2>";
+        diasemana = "<h2>Hoje é sexta!</h2><h3>Confira o prato do dia no nosso cardápio pelo WhatsApp!</h3>";
             break;
         case 6 :
-        diasemana = "<h2>Hoje é sábado! <br> O Prato do Dia é Filé de Pescada ao molho de camarão!</h2>";
+        diasemana = "<h2>Hoje é sábado!</h2><h3>Confira o prato do dia no nosso cardápio pelo WhatsApp!</h3>";
             break;  
       }
 
       document.write(diasemana);
 
-      </script>
 
+      var dt=new Date();
+      var horas=dt.getHours();
+      var hoje = new Date;
+      var diasemanas = hoje.getDay()
+
+      switch(diasemanas) {
+        
+        case 0 :
+            diasemana = "<h2>estamos fechados, abrimos segunda às 9</h2>";
+            break;
+        
+        case 1 :
+
+        if
+      (horas < 9 )
+      {document.write(`<h2>São ${horas} horas, estamos fechados, abrimos às 9!</h2>`);}
+        else if
+      (horas >= 9 && horas < 16)
+      {document.write(`<h2>São ${horas} horas, estamos abertos até as 16!</h2>`);}
+      else
+      {document.write(`<h2>São ${horas} horas, estamos fechados, abrimos às 9!</h2>`);}
+            break;
+        
+        case 2 :
+        if
+      (horas >= 9 && horas < 16)
+      {document.write(`<h2>São ${horas} horas, estamos abertos até as 16!</h2>`);}
+      else
+      {document.write(`<h2>São ${horas} horas, estamos fechados, abrimos às 9!</h2>`);}
+            break;
+        
+        case 3 :
+        if
+      (horas >= 9 && horas < 16)
+      {document.write(`<h2>São ${horas} horas, estamos abertos até as 16!</h2>`);}
+      else
+      {document.write(`<h2>São ${horas} horas, estamos fechados, abrimos às 9!</h2>`);}
+            break;
+        
+        case 4 :
+        if
+      (horas >= 9 && horas < 16)
+      {document.write(`<h2>São ${horas} horas, estamos abertos até as 16!</h2>`);}
+      else
+      {document.write(`<h2>São ${horas} horas, estamos fechados, abrimos às 9!</h2>`);}
+            break;
+        
+        case 5 :
+        if
+      (horas >= 9 && horas < 16)
+      {document.write(`<h2>São ${horas} horas, estamos abertos até as 16!</h2>`);}
+      else
+      {document.write(`<h2>São ${horas} horas, estamos fechados, abrimos às 9!</h2>`);}
+            break;
+        
+        case 6 :
+        if
+      (horas < 9 )
+      {document.write(`<h2>São ${horas} horas, estamos fechados, abrimos às 9!</h2>`);}
+        else if
+      (horas >= 9 && horas < 16)
+      {document.write(`<h2>São ${horas} horas, estamos abertos até as 16!</h2>`);}
+      else
+      {document.write(`<h2>São ${horas} horas, estamos fechados, abrimos segunda às 9</h2>`);}
+            break;  
+      }
+
+</script>
 
     <div class="space-10"></div>
+    <div class="col text-center ">
+      <section id="home"><a class="" href="https://wa.me/5513996585743"><img src="img/Don Pietro Melhorada Redonda.png" width="150px" height="150px" alt="" srcset=""></a></section> 
 
-    <div class="container text-center">
-        <div class="row">
-          <div class="col">
-            <h3>Segunda-feira</h3>
-            <p>Virado à Paulista</p>
-                <br>  
-          </div>
-          <div class="col">
-            <h3>Terça-feira</h3>
-            <p>Costelinha de Porco com Feijão Tropeiro</p>
-                <br>  
-          </div>
-          <div class="col">
-            <h3>Quarta-feira</h3>
-            <p>Feijoada</p>
-                <br>   
-          </div>
-          <div class="col">
-            <h3>Quinta-feira</h3>
-            <p>Panqueca, <br>
-            Lasanha de Beringela</p> 
-          </div>
-          <div class="col">
-            <h3>Sexta-feira</h3>
-            <p>Costelinha de Porco <br>
-                com feijão tropeiro</p>
-                <br>  
-          </div>  
-          <div class="col">
-            <h3>Sábado</h3>
-            <p>Filé de Pescada ao molho de camarão</p>
-                <br>  
-          </div> 
-          <div class="col">
-            <h3>Domingo</h3>
-            <p>Fechado</p>
-          </div>                           
-        </div>
-      </div>
+</div>
 
-      <p  class="text-center">Os pratos do dia geralmente acompanham arroz, feijão, farofa, refogado, salada e fritas!</p>
-
-        <div class="space-25"></div> 
-
-    <div class="container text-center">
+    <div >
         <div class="row">
 
           <div class="col">
-            <h2>Prato Feito ou Marmitex</h2>
-            <p>Bisteca <br>
-            Calabresa Acebolada <br>
-            Filé de Frango <br>
-            Frango ao Molho <br>
-            Omelete <br>
-            Toscana <br>
-            <br>
-            Acompanha: <br>
-            Arroz, Feijão, Farofa, Refogado e Salada!
-            </p>
+            <h3 class="container text-center">Prato Feito ou Marmitex</h3>
+            <p>Bisteca - R$17,00 <br>
+            Calabresa Acebolada - R$17,00  <br>
+            Filé de Frango - R$17,00  <br>
+            Frango ao Molho - R$17,00  <br>
+            Omelete - R$17,00  <br>
+            Toscana - R$17,00 </p>
+          <p class="container text-center">Acompanha: <br>
+          Arroz, Feijão, Farofa <br> Refogado e Salada!</p>
           </div>
 
           <div class="col">
-            <h2>A La Carte</h2>
-            <p>Bisteca com Ovo <br>
-            Calabresa com Ovo <br>
-            Contra-Filé Grelhado <br>
-            Contra-Filé Acebolado <br>
-            Contra-Filé à Milanesa <br>
-            Contra-Filé com Ovo <br>
-            Contra-Filé à Parmegiana <br>
-            Filé de Frango à Milanesa <br>
-            Filé de Frango à Parmegiana <br>
-            Filé de Pescada à Milanesa <br>
-            Filé de Pescada à Parmegiana <br>
-            <br>
-            Acompanha: <br>
-            Arroz, Feijão, Refogado, Fritas e Salada!           
-            </p>
-          </div>
-
-          <div class="row">
-            <div class="col">
-                <section id="home"><a class="navbar-brand" href="https://wa.me/5513996585743"><img src="img/Don Pietro Melhorada Redonda.png" width="150px" height="150px" alt="" srcset=""></a></section> 
-            </div>
-
+            <h3 class="container text-center">A La Carte</h3>
+            <p>Bisteca com Ovo - R$20,00 <br>
+            Calabresa com Ovo - R$20,00 <br>
+            Contra-Filé Grelhado - R$23,00 <br>
+            Contra-Filé Acebolado - R$24,00 <br>
+            Contra-Filé à Milanesa - R$25,00 <br>
+            Contra-Filé com Ovo - R$25,00 <br>
+            Contra-Filé à Parmegiana - R$29,00 <br>
+            Filé de Frango à Milanesa - R$22,00 <br>
+            Filé de Frango à Parmegiana - R$26,00 <br>
+            Filé de Pescada à Milanesa - R$25,00 <br>
+            Filé de Pescada à Parmegiana - R$28,00</p>
+            <p  class="container text-center">Acompanha: <br>
+            Arroz, Feijão, Refogado <br> Fritas e Salada!</p>
           </div>
         </div>
     </div>
 
     <div class="space-10"></div>     
 
-    <h3  class="text-center"> Av. Presidente Kennedy 14.306 <br>
+    <h3  class="text-center" style ="color:red";>
+
+         Av. Presidente Kennedy 14.306 <br>
          Vila Caiçara, Praia Grande - SP   </h3>
 
     <div class="space-10"></div>   
